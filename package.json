@@ -1,0 +1,24 @@
+{
+  "name": "playwright-browserstack-typescript",
+  "version": "1.0.0",
+  "description": "sample playwright browserstack integration",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test --config playwright.config.ts",
+    "test:e2e-browserstack": "npx browserstack-node-sdk playwright test --config playwright.config.ts",
+    "test:login": "npx playwright test --config playwright.config.ts --grep @LogInScenario",
+    "test:login-browserstack": "npx browserstack-node-sdk playwright test --config playwright.config.ts --grep @LogInScenario",
+    "test:addtocart-browserstack": "npx browserstack-node-sdk playwright test --config playwright.config.ts --grep @AddToCart",
+    "test:checkout-browserstack": "npx browserstack-node-sdk playwright test --config playwright.config.ts --grep @CheckOut-04",
+    "test:search-browserstack": "npx browserstack-node-sdk playwright test --config playwright.config.ts --grep @ProductSearch",
+    "test:all-scenarios": "npx browserstack-node-sdk playwright test --config playwright.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.53.0",
+    "@types/node": "^20.14.10",
+    "browserstack-node-sdk": "1.42.7"
+  }
+}

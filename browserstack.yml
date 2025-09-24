@@ -1,0 +1,39 @@
+userName: your-username
+accessKey: your-access-key
+# The following capabilities are used to set up reporting on BrowserStack:
+# Set 'projectName' to the name of your project. Example, Marketing Website
+projectName: Chennai Champs
+# Set `buildName` as the name of the job / testsuite being run
+buildName: "Testathon"
+buildIdentifier: ${BUILD_NUMBER}
+consoleLogs: info
+
+platforms:
+  - browserName: chrome
+    os: Windows
+    osVersion: 11
+    browserVersion: latest
+  - browserName: playwright-webkit
+    os: OS X
+    osVersion: Tahoe
+    browserVersion: latest
+  # - browserName: playwright-firefox
+  #   os: Windows
+  #   osVersion: 11
+  #   browserVersion: 140.0
+  # - browserName: playwright-chromium
+  #   os: Windows
+  #   osVersion: 11
+  #   browserVersion: 139.0
+  # - browserName: chrome
+  #   osVersion: 15.0
+  #   deviceName: Samsung Galaxy S25 Ultra
+  # - browserName: safari
+  #   osVersion: 26.0
+  #   deviceName: iPhone 17
+  # - browserName: safari
+  #   osVersion: 18.6
+  #   deviceName: iPad Air 13 2025
+  # - browserName: chrome
+  #   osVersion: 15.0
+  #   deviceName: OnePlus 13R

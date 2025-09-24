@@ -1,0 +1,24 @@
+userName: your-username
+accessKey: your-accessKey
+projectName: Chennai Champs
+buildName: Testathon
+buildIdentifier: '37'
+consoleLogs: info
+platforms:
+  - browserName: chrome
+    os: Windows
+    osVersion: 11
+    browserVersion: latest
+  - browserName: playwright-webkit
+    os: OS X
+    osVersion: Tahoe
+    browserVersion: latest
+testContextOptions:
+  skipSessionStatus: false
+  skipSessionName: false
+browserstackLocal: false
+logDir: >-
+  D:\Users\SujithaV\IdeaProjects\testathon-browserstack-project\testathon-browserstack-project\log
+browserStackLocalOptions:
+  skipBinaryInitialisation: false
+proxySettings: {}

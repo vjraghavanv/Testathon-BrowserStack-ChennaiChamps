@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2016", "dom"],
+    "mapRoot": "./",
+    "module": "esNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "./out-tsc",
+    "sourceMap": true,
+    "target": "ES3",
+    "jsx": "react-jsx",
+    "typeRoots": ["./node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "ignoreDeprecations": "5.0",
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [".eslintrc.js", "./src/**/*", "tailwind.config.ts"]
+}
